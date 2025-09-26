@@ -14,3 +14,14 @@ body {
 #loginPage .card {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+:root{--radius:12px; --bg:#f5f7fb;}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; background:var(--bg); margin:0;}
+header{background:linear-gradient(90deg,#0ea5e9,#0b74c3); color:#fff; padding:.8rem 1rem; display:flex; align-items:center; justify-content:space-between;}
+header .brand{display:flex; gap:.6rem; align-items:center;}
+.card-rounded{border-radius:var(--radius); background:#fff; box-shadow:0 8px 24px rgba(12,35,63,0.06);}
+.hidden{display:none!important;}
+.stat-card{border-radius:10px; padding:.6rem; text-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.04);}
+table thead th{background:#f3f4f6}
+.demografi { --accent1:#3b82f6; --accent2:#8b5cf6; --accent3:#f59e0b; --accent4:#10b981; }
+.keuangan { --k1:#16a34a; --k2:#ef4444; --k3:#0ea5e9; --k4:#f97316; }
+@media(max-width:900px){ .desktop-split{flex-direction:column} }
