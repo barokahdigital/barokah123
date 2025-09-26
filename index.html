@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sapa Warga RT04</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+</head>
+<body>
+      <section id="loginPage" style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:1rem;">
+    <div class="card p-4" style="max-width:640px;width:100%;">
+      <div class="text-center mb-3">
+        <img id="logoLogin" src="Screenshot 2025-08-30 100250.png" alt="Logo" style="width:96px;height:96px;border-radius:12px;object-fit:cover">
+        <h4 class="mt-2">SAPA KELUARGA RT04</h4>
+        <p class="text-muted mb-0">Selamat Datang di Situs Sapa Keluarga RT 04</p>
+      </div>
+      <div class="mb-2"><input id="username" class="form-control" placeholder="Username"></div>
+      <div class="mb-2"><input id="password" type="password" class="form-control" placeholder="Password"></div>
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" onclick="login()">Login</button>
+      </div>
+      <small class="d-block text-muted mt-3">Copyright: <b>@2025BarokahDigitalMedia</b></small>
+    </div>
+  </section>
+
+    <section id="app" class="hidden">
+      </section>
+
+    <div class="modal fade" id="modalReadme" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header"><h5 class="modal-title">README</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <ul>
+            <li>Login admin/admin123 untuk akses penuh, user/user123 untuk read-only.</li>
+            <li>Unggah logo di tab Admin (disimpan di localStorage).</li>
+            <li>Dashboard terbagi: Demografi (atas) & Laporan Keuangan (bawah), sekarang dengan saldo per kas (Insiba,Ronda,Donasi,Umum).</li>
+            <li>Pada tab Admin Anda dapat mengatur saldo awal per kas, lalu tambah transaksi dengan kategori.</li>
+          </ul>
+        </div>
+        <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button></div>
+      </div>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
