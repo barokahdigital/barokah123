@@ -1,0 +1,16 @@
+/* Definisikan class yang digunakan untuk menyembunyikan elemen */
+.hidden {
+    display: none !important;
+}
+
+/* Tambahkan styling kustom lainnya di bawah ini */
+
+/* Contoh styling opsional untuk body */
+body {
+    background-color: #f8f9fa; /* Warna latar belakang ringan */
+}
+
+/* Contoh styling untuk card login */
+#loginPage .card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
